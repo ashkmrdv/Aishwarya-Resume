@@ -7,7 +7,7 @@ import Skills from './components/pages/Skills';
 import Project from './components/pages/Project';
 import About from './components/pages/About';
 import React from 'react';
-import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Switch,Redirect } from 'react-router-dom';
 
 function App() {
   return (
@@ -16,6 +16,9 @@ function App() {
       <Navbar/>
 
       <Switch>
+      <Route exact path="">
+      <Introduction/>
+      </Route>
 
       <Route exact path="/">
       <Introduction/>
@@ -32,6 +35,8 @@ function App() {
       <Route path="/work">
       <Project/>
       </Route>
+
+      <Redirect to="/" />
 
       </Switch>
         
