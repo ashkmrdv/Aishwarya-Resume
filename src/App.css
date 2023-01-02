@@ -1,0 +1,29 @@
+body{
+  background-image: url("./components/images/image_7.jpg");
+}
+.blue{
+  color:darkblue;
+}
+.intro{
+  margin-top:150px;
+}
+.skill{
+  background-color: darkblue;
+}
+
+.accordion-button{
+  font-size: inherit;
+  
+}
+
+.accordion-item{
+  border: 1 px solid rgba(35,65,100,.15);
+}
+
+.accordion-button:not(.collapsed){
+  color: inherit;
+  background-color: rgba(35,65,100);
+  color: #e8e8e8;
+}
+
+
